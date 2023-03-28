@@ -15,14 +15,13 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: ""
 
       - name: Install dependencies
-        run: npm install --no-audit --no-fund --no-optional
+        run: npm install
 
       - name: Check Build
-        run: |
-          npm run build
+        run: npm run build
       - name: Run Linter
         run: npm run lint
 
