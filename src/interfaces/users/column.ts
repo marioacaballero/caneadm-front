@@ -1,4 +1,4 @@
-export interface Column {
+export interface UserColumn {
   id: "id" | "firstName" | "lastName" | "email" | "cell" | "address";
   label: string;
   minWidth?: number;
